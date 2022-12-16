@@ -1,227 +1,60 @@
 # Setting Up a Development Environment
 
+### Downloading and Building Python from Source
+
+To get started, we need to install the most recent version of Python on your laptop. The most recent stable version of Python is 3.11 from December 6, 2022. You can download the appropriate installer for your laptop (Mac or PC) from the [Python website](https://www.python.org/downloads/release/python-3111/).
+
+
+## Downloading and installing the VS Code editor
+
+Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. We will write and edit python code using the Visual Studio code editor. Follow the directions on the VS Code website to install the version of [VS Code](https://code.visualstudio.com/) that is appropriate for your laptop.
+
+Once VS Code is installed you will also need to install an extension for Python. You can learn more about extensions [here] (https://code.visualstudio.com/docs/introvideos/extend). Go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "Pylance". Pylance is an extension that works alongside Python in Visual Studio Code to provide performant language support.
+
+Lastly, we need to tell VS Code which version of Python you want to use. And of course, we want to use the one we just installed! To do this, you can go to View -> Command Palette. Then in the search box look for Python: Select Interpreter. Choose the most recent version of python that you just installed 3.11.1
+
+Now you are all set to start writing Python code in VS Code!
+
+But, how do you get started? Fear not! We have created a Github repository with all of the assignments for the class that you will need to complete with input files and instructions for each, and a test that shows you if you have completed the coding assignment correctly. Also, we included a script to get you started with writing scripts called new.py. All of these goodies are in Github. So, now you just need to make a copy of that repository in your own Github account. Check out how to do that below...  
+
 ## GitHub
 
-The following will help you create a GitHub account and copy the course repo into your account:
+The following will help you create a GitHub account and copy the course repository into your own account.
+This will allow you to have your own copy of the assignments, a place to write programs, and a repository in Github that you can submit your assignments to.  
+
+First, create your free [GitHub](http://github.com) account 
 
 * Go to [GitHub](http://github.com)
 * Create a (free) user account
-* Go to [the course repo](https://github.com/kyclark/be434-fall-2021)
+
+Next, go to the [course repository](https://github.com/bhurwitz33/be434-spring-2023) and click the "Fork" button so as to make a copy of the code into your own Github account. 
+
+* Go to [the course repo](https://github.com/bhurwitz33/be434-spring-2023)
 * Click the "Fork" button (upper-right)
 
-To check out the code locally, I recommend that you configure your SSH keys.
-Open a terminal, and do this:
+This will create a new repository in your Github account. All your assignments will be pushed to GitHub where I will pull the code to my machine for checking. Add my GitHub username "bhurwitz33" as a Collaborator on your repo so that I can push and pull code, and then email me your GitHub username and the URL for your repo (bhurwitz@arizona.edu). At the end of the semester, you will have a public repository of code you can share to show proficiency in Python coding and testing. 
 
-```
-ls ~/.ssh
-```
-
-If you get an error because that directory does not exist, then run this command:
-
-```
-ssh-keygen
-```
-
-Press "Enter" repeatedly to accept the default answers (unless you really want to type a passphrase when using your key).
-Then try again:
-
-```
-$ ls ~/.ssh
-codecommit      config          id_rsa.pub
-codecommit.pub  id_rsa          known_hosts
-```
-
-If all goes well, you should have an _id_rsa_ file, which is a **private** SSH key that should be kept private.
-Do not share the contents of this file or copy it anywhere.
-You can use the `cat` command to look at the contents of the **public** SSH key in _id_rsa.pub_:
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-Copy all the text you see from "ssh-rsa" to the end.
-Then go to your [GitHub settings](https://github.com/settings/profile), click on "SSH and GPG keys," then click the big green "New SSH key" button.
-Give the new key a name like "laptop" (you may add keys from other machines like the HPC) and paste in the contents of the **public** key.
-Click the "Add SSH key" button to save your new key.
-
-Next, go to the [course repository](https://github.com/kyclark/be434-fall-2021) and click the "Fork" button so as to make a copy of the code into your account. 
-Add my GitHub username "kyclark" as a Collaborator on your repo so that I can push and pull code, and then email me your GitHub ID and the URL for your repo. 
-
-* Go to the "Settings" for your repo
+* Go to the "Settings" for your repo called "be434-spring-2023"
 * Choose "Manage Access" from the left panel
 * Click the green "Invite a collaborator" button
-* Add "kyclark" and send
+* Add "bhurwitz33" and send
 
-All your assignments will be pushed to GitHub where I will pull the code to my machine for checking. 
-At the end of the semester, you will have a public repository of code you can share to show proficiency in Python coding and testing.
+Next, you will need to create a copy of this repository on your laptop so you can work on python code locally, and then turn it in by pushing the code back to Github (more on this next). I recommend using [the Github Desktop](https://desktop.github.com/)
 
-With that, you now should be able _clone_ or copy down the contents of the repo onto your local machine (e.g., your laptop, but you could also clone it to any machine like a remote server, an AWS VM, the UA HPC, etc.).
-Be sure to replace _YOUR_GITHUB_ID_ with your GitHub ID:
+* Download [the Github Desktop](https://desktop.github.com/) for your laptop
+* From the top menu bar, select Github Desktop, then select Preferences, go to Accounts, and login to Github
+* From the top menu bar, select Github Desktop, then select Preferences, go to Integrations, select Visual Studio Code as the "External Editor"
+* Be sure to "save" your Preferences
 
-```
-git clone git@github.com:YOUR_GITHUB_ID/be434-fall-2021.git
-```
+With that, you now should be able _clone_ or copy down the contents of the repo onto your local machine (e.g., your laptop). 
 
-If that goes well, you should have a _be434-fall-2021_ directory.
-Go into that directory:
+* Using GitHub desktop, Go to File in the top menu, and select "Clone Repository"
+* Use the "Filter your repositories" box to find "be434-spring-2023" in your GitHub Account
+* Select the "be434-spring-2023" and click the "Clone" button to copy the repository to your local directory
 
-```
-cd be434-fall-2021
-```
+My original GitHub repo (that you cloned) is an _upstream_ source for your repository. This means that I can make updates throughout the semester, and you can get those changes by clicking on the tab in your Github Desktop called "Fetch origin". So your repository will always be up to date with mine. I don't expect to make many changes, and I will notify you in D2L if I do...
 
-You will need to configure my original GitHub repo as an _upstream_ source with the following command:
+## Authors
 
-```
-git remote add upstream https://github.com/kyclark/be434-fall-2021.git
-```
+Bonnie Hurwitz <bhurwitz@arizona.edu> and Ken Youens-Clark <kyclark@gmail.com>
 
-I will make updates to the repo throughout the semester to add new materials and assignments.
-You will use this command to _pull_ my changes into your repo:
-
-```
-git pull upstream main
-```
-
-
-## Windows
-
-Follow the directions to install [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-
-## Mac
-
-* Open Terminal or consider using [iTerm2](https://iterm2.com/).
-* Install Xcode command-line utilities.
-
-## VS Code
-
-If you don't have a preferred way to write and edit code, install [VS Code](https://code.visualstudio.com/).
-
-## Python
-
-It's possible you have Python installed, but it's likely that it's version 2.x which is no longer maintained and should not be used.
-To find out, run this command:
-
-```
-$ python --version
-Python 2.7.16
-```
-
-You may still have a Python 3.x available as `python3`.
-If you have a recent Python in the 3.9 tree, you're all set:
-
-```
-$ python3 --version
-Python 3.9.1
-```
-
-### Installing on macOS with Homebrew
-
-Fingers crossed that this works:
-
-```
-brew install python3
-```
-
-If that works:
-
-```
-$ which python3
-/opt/homebrew/bin/python3
-$ python3 --version
-Python 3.9.6
-```
-
-### Downloading and Building Python from Source
-
-If you do not have Python installed and you are not running the Apple M1 processor, you can download the latest Python source code:
-
-```
-wget https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tgz
-```
-
-If you don't have `wget`, consider installing it.
-If you are on macOS, I would recommend you learn how to use [Homebrew](https://brew.sh/).
-Alternately, you can use [`curl`](https://curl.se/):
-
-```
-curl https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tgz --output Python-3.9.6.tgz
-```
-
-The `.tgz` is a Gzipped-compressed _tar_ (tape archive) file, AKA a _tarball_.
-You can use `tar` with the following flags:
-
-* `-x`: extract
-* `-v`: verbose
-* `-f`: the filename of the tar file
-
-You can unpack the tarball like so:
-
-```
-tar -x -v -f Python-3.9.6.tgz
-```
-
-As these are single-character _short_ flag, they can be combined like `-xvf`.
-The order of `xv` and `vx` is not important, but the `-f` must come last as it need to precede the tarball filename.
-Oddly, `tar` doesn't even require the dash, so it's quite common to see this like so:
-
-```
-tar xvf Python-3.9.6.tgz
-```
-
-That should emit around 4500 lines of text explaining the files that are being unpacked.
-If you would rather not see that, then omit the `-v` flag.
-
-```
-tar xf Python-3.9.6.tgz
-```
-
-Use the `cd` (_change directory_) command to go into the new _Python-3.9.6_ directory:
-
-```
-cd Python-3.9.6
-```
-
-Use `ls` (_list_) to look at the files:
-
-```
-$ ls
-CODE_OF_CONDUCT.md  Makefile.pre.in     Programs/           configure*
-Doc/                Misc/               Python/             configure.ac
-Grammar/            Modules/            README.rst          install-sh*
-Include/            Objects/            Tools/              netlify.toml
-LICENSE             PC/                 aclocal.m4          pyconfig.h.in
-Lib/                PCbuild/            config.guess*       setup.py
-Mac/                Parser/             config.sub*
-```
-
-Run the _configure.sh_ program to find all the important elements on your system that will be needed to build Python such as a C compiler.
-This may require you to install said C compiler.
-For instance, on macOS you will probably need to install Xcode's command-line utilities.
-
-```
-./configure --enable-optimizations
-```
-
-If you get an error about missing a C compiler, you will need to install one.
-On Ubuntu, you can do this:
-
-```
-sudo apt install build-essential
-```
-
-NOTE: The `sudo` command is a combination of _su_ (super-user) and _do_, so you are executing a command as the _root_ or administrator of the machine. It will likely require you to type your password. Cf. https://xkcd.com/149/.
-
-If everything goes well, the last line should say _creating Makefile_.
-That means you have a _Makefile_, which means you can run `make` to build Python.
-This step may take a while:
-
-```
-make
-```
-
-If that succeeds, you should be able to run **`make install`** to copy the new Python binary to location like `/usr/local/bin`.
-If permissions prevent you from writing to system directories, then do **`sudo make install`** to run as root.
-
-## Author
-
-Ken Youens-Clark <kyclark@gmail.com>
