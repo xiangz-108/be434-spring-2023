@@ -1,10 +1,10 @@
 # Biosystems Analytics 434/534 (3 units)
 
-Shantz 440; Monday and Wednesday 9:30-10:45AM
+Asynchronous Online Format; Weekly modules completed at your own pace.
 	
 ## Description of Course
 
-This course provides a comprehensive introduction to Python for data analytics. This course teaches students Python’s basic data types and structures like strings, numbers, lists, tuples, dictionaries, and sets. In addition, the course focuses on testing code by writing small functions to develop larger, testable programs. As programs become complex, this “test-driven development strategy” ensures that code is robust and can be delivered to the community as cutting-edge open source packages. The course focuses on hands-on coding exercises to develop practical coding skills for interpreting and analyzing high-dimensional biological data. Students work in a collaborative learning classroom to participate in live coding exercises and gain skills in:
+This course provides a comprehensive introduction to Python for data analytics. This course teaches students Python’s basic data types and structures like strings, numbers, lists, tuples, dictionaries, and sets. In addition, the course focuses on testing code by writing small functions to develop larger, testable programs. As programs become complex, this “test-driven development strategy” ensures that code is robust and can be delivered to the community as cutting-edge open source packages. The course focuses on hands-on coding exercises to develop practical coding skills for interpreting and analyzing high-dimensional biological data. Students work independently and collaboratively online via Slack to gain skills in:
 
 - basic Python data structures 
 - writing and testing functions and programs, 
@@ -20,15 +20,16 @@ Some experience programming Python is useful but not required.
 
 ## Instructor and Contact Information
 
-- Instructor: Ken Youens-Clark, MS, Adjunct Lecturer
-- Office: `None`
-- E-mail: kyclark@arizona.edu
-- Office Hours: 8:30-9:30AM M/W in Shantz 440
-- Course Websites: https://github.com/kyclark/be434-fall-2021
+- Instructor: Bonnie Hurwitz, Associate Professor, Biosystems Engineering
+- Office: Bio5 Keating, Room 223 
+- E-mail: bhurwitz@arizona.edu
+- Office Hours: 9:00-10:00 AM W/F on Zoom (https://arizona.zoom.us/my/bonniehurwitz)
+- Course Websites: https://github.com/bhurwitz33/be434-spring-2023
 
 ## Course Objectives
 
-The course objective is to teach formal, structured methods to write Python well. This course introduces techniques seasoned programmers use daily, from how to start writing a new program, to how to verify that it actually works. This course teaches students regular expressions, algorithm design, and random events using simple puzzles and games. Once students have mastered these coding concepts and practices, they can be applied broadly to advanced concepts in scientific computing and biological data.
+The course objective is to teach formal, structured methods to write Python well. This course introduces techniques seasoned programmers use daily, from how to start writing a new program, to how to verify that it actually works. This course teaches students basic python data structures, loops, functions, and regular expressions using simple puzzles and games. Once students have mastered these coding concepts and practices, they can be applied broadly to advanced concepts in scientific computing and biological data.
+
 Expected Learning Outcomes
 This course is designed to provide students with a foundational understanding of manipulating data in Python. Upon completing this course students will be able to: 
 
@@ -42,15 +43,15 @@ This course is designed to provide students with a foundational understanding of
 - Use and control randomness; 
 - Use these skills to write challenging games in Python.
 
-Graduate students will go beyond these basic learning outcomes to (1) apply basic coding principles to solve more advanced challenges, (2) develop optimized solutions to working with large-scale datasets and (3) evaluate when it is important to move from a single server solution to high-performance computing.   
+Graduate students will go beyond these basic learning outcomes to create their own coding project that applies basic coding principles to solve more advanced challenges. Undergraduate students will work with a graduate student(online via slack) to develop ideas for what needs to be in the test suite for the code (that the graduate student will implement). 
 
 ## Course Format and Teaching Methods
 
-The course is taught using a collaborative learning approach consisting of live-coding examples that demonstrate core concepts, an interactive group assignment, a collective discussion on the material, and an introduction to the homework. Importantly, because the development of scripting skills is essential to this class, programming homework is assigned weekly to reinforce the concepts taught in class. Each homework assignment is due a week after it was assigned. Students are quizzed on the material once a week on Tuesdays. At the end of the semester, students will implement code for a novel program via the class project. Undergraduates may choose from a set of simple games, whereas graduate students will program more complex games. Graduate students are also required to take a final examination comprised of small coding assignments based on concepts taught throughout the semester. 
+The course is taught using an asynchronous online format, that allows students to work at their own pace through online videos with live-coding examples that demonstrate core concepts, an interactive group discussion (via slack) to get help from other students and the instructor, and weekly quizzes and homework assignments that reinforce concepts. Importantly, because the development of scripting skills is essential to this class, programming homework and quizzes must be completed weekly.  
 
 ## Absence and Class Participation Policy
 
-Attending lectures and participating are vital to the learning process given the hands-on nature of the class. As such, attendance is required at all lectures. Students who miss class due to illness or emergency are required to bring documentation from their health-care provider or other relevant, professional third parties. Failure to submit third-party documentation will result in unexcused absences.
+Watching weekly videos and completing quizzes and assignments is vital to the class. As such, all assignments are due at the end of the week. Students who miss assignments due to illness or emergency are required to bring documentation from their health-care provider or other relevant, professional third parties. Failure to submit third-party documentation will result in missing/ungraded assignments for the week.
 
 The UA’s policy concerning Class Attendance, Participation, and Administrative Drops is available at http://catalog.arizona.edu/policy/class-attendance-participation-and-administrative-drop 
 
@@ -64,12 +65,12 @@ Students who register after the first class meeting may make up missed assignmen
 
 ## Course Communications 
 
-Online communication, quizzes, and grading will be conducted through D2L. Course materials (reading, homework assignments, homework answers, and lectures) will be available on D2L and the course GitHub site (https://github.com/hurwitzlab/biosystems-analytics-2020) The GitHub privacy statement is located here: https://help.github.com/articles/github-privacy-statement.
+Online communication, quizzes, and grading will be conducted through D2L and Slack. Course materials (video lectures, readings, homework assignments, and quizzes) will be available on D2L and the course GitHub site (https://github.com/bhurwitz33/be434-spring-2023) The GitHub privacy statement is located here: https://help.github.com/articles/github-privacy-statement. Slack (https://slack.com/) will be used for online class discussion forums, and each student will be invited to the slack channel at the beginning of the semester. 
 
 ## Required Texts or Readings
 
 Tiny Python Projects (http://tinypythonprojects.com/), Ken Youens-Clark, Manning, 2020
-All texts are available free of charge, required sections are listed on the course schedule in D2L. 
+All texts are available free of charge through the University of Arizona online catalog, required sections are listed on the course schedule in D2L. 
 
 ## Optional Texts or Readings
 
@@ -82,7 +83,7 @@ All texts are available free of charge, required sections are listed on the cour
 
 ## Required or Special Materials
 
-Students will be required to create a (free) account on GitHub to download and turn in assignments. Students must install Python on their laptops for completing and turning in assignments. Windows users will need to install Windows Subsystem for Linux (WSL) in order to have a functional command-line interface. Students will also need to install an editor. In this class, we use Visual Studio Code (https://code.visualstudio.com/), but students are welcome to use a different editor of their choice. Information on accessing these resources can be found under Getting Started in D2L. We walk-through these resources in-class during the first week of the course.
+Students will be required to create a (free) account on GitHub to download and turn in assignments. Students must install Github Desktop (https://desktop.github.com/) on their laptops. Students must also install Python on their laptops for completing and turning in assignments. Windows users will need to install Windows Subsystem for Linux (WSL) in order to have a functional command-line interface. Students will also need to install an editor. In this class, we use Visual Studio Code (https://code.visualstudio.com/). Information on accessing these resources and detailed installation instructions can be found under Getting Started in D2L and the setup.md file on the course Github site (https://github.com/bhurwitz33/be434-spring-2023).
 
 ## Required Extracurricular, Activities
 
@@ -92,23 +93,13 @@ Optional software carpentry workshops and events related to Python data analytic
 
 The final letter grades for the class are based on the TOTAL NUMBER OF POINTS that each student accumulates for the following assessments (see details for each section below):
 
-Undergraduate Students:
+Point Breakdown per Category:
 
 | Category | # Assessments | Points per assessment | Points total |
 | -------- | ------------- | --------------------- | ------------ |
 | Homework (48%) | 12 | 40 | 480 |
-| Quizzes (36%) | 12 | 30 | 360 |
+| Quizzes (36%) | 36 | 10 | 360 |
 | Project (16%) | 1 | 160 | 160 |
-| Total | | | 1000 |
-
-Graduate Students:
-
-| Category | # Assessments | Points per assessment | Points total |
-| -------- | ------------- | --------------------- | ------------ |
-| Homework (36%) | 12 | 30 | 360 |
-| Quizzes (30%) | 12 | 25 | 300 |
-| Project (14%) | 1 | 140 | 140 |
-| Final exam (20%) | 1 | 200 | 200 |
 | Total | | | 1000 |
 
 Grading Scale:
@@ -123,25 +114,21 @@ Requests for incomplete (I) or withdrawal (W) must be made in accordance with Un
 
 Dispute of Grade Policy: Disputes on a grade for an assignment, quiz, or exam must be made within three days of when the grade is posted.
 
-## Assignments and Examinations
+## Weekly Learning Modules
 
-All assignments, quizzes, and examinations are listed on the course GitHub site https://github.com/hurwitzlab/biosystems-analytics-2020 and linked in D2L. 
+Each week's learning module contains: instructional videos for 3 units, 3 practice quizzes for each unit in the module, and a homework assignment. All homework assignments are on the course GitHub site https://github.com/bhurwitz33/be434-spring-2023 and linked in D2L. All readings, live-coding videos, and quizzes are on D2L. 
 
-Homework is assigned every Thursday and is due the following Thursday. The homework provides you with practice in scripting and analytics. Homework is turned in by committing your code to your GitHub repository that is shared with the instructor. At the beginning of class on Thursday, I will download your code from GitHub. Your grade will be the percentage of tests you pass in the provided test suite.. We encourage group work but be sure the code you turn in has been independently written (see Code of Academic Integrity below). 
+## Homework
+
+The homework provides you with practice in scripting and analytics. Homework is turned in by committing your code to your GitHub repository that is shared with the instructor. On Monday of following week, th instructor will download your code from GitHub. Your grade will be the percentage of tests you pass in the provided test suite. We encourage group work (via Slack) but be sure the code you turn in has been independently written (see Code of Academic Integrity below). 
 
 ## Quizzes
 
-Each week you will be tested on the reading for the week ahead (see the schedule in D2L). This will prepare you for the lectures and in-class work. Each of the quizzes will be available on D2L during the first 10 minutes of class on Tuesdays. Answers for each quiz are reviewed in class and posted on the class D2L website.
+Each week, you will be tested on the videos and reading for that week (see the schedule in D2L). Each weekly module has three units with 1 practice quiz per unit. Students can take the quizzes as many times as they would like to learn the material and improve their scores.
 
 ## Final Project
 
-At the end of the semester, students will implement a novel program in Python via the class project that demonstrates the core programming concepts for the class. The project will include documentation (a README), a program, a test suite, and any required input/data to run the program. The program may be a game, a solution to a problem from something like Rosalind.info, or some program needed by your lab or PI to further your research. Graduate students will be expected to create more detailed and involved programs than undergraduates.
-Final Examination
-The final exam (for graduate students only) will be drawn from a sample of small coding assignments to be completed during the final using programming concepts in Python discussed throughout the semester. The core concepts will be highlighted each week as expected learning outcomes and given as practice in homework assignments. The final is an open note and open book exam. 
-
-**Final Exam Schedule:** http://www.registrar.arizona.edu/schedules/finals.htm
-
-**Final Exam Regulations:** https://www.registrar.arizona.edu/courses/final-examination-regulations-and-information
+At the end of the semester, graduateb students will implement a novel program in Python via the class project that demonstrates the core programming concepts for the class. The project will include documentation (a README), a program, a test suite, and any required input/data to run the program. The program may be a game, a solution to a problem from something like Rosalind.info, or some program needed by your lab or PI to further your research. Undergraduate students will work with a graduate student to suggest tests that should be included in the test suite for the graduate student's project. Documentation for the test suite proposed by the undergraduate will be uploaded to their Githib repository. 
 
 ## Scheduled Topics/Activities
 
@@ -149,7 +136,7 @@ TBD
 
 ## Honors Credit
 
-Students wishing to contract this course for Honors Credit should email me to set up an appointment to discuss the terms of the contract. Information on Honors Contracts can be found at http://www.honors.arizona.edu/faculty-and-advisors/contracts.  
+Students wishing to contract this course for Honors Credit should email me to set up an appointment to discuss the terms of the contract. Typically undergraduate honors students implement a simplified project for the final project. Information on Honors Contracts can be found at http://www.honors.arizona.edu/faculty-and-advisors/contracts.  
 
 ## Classroom Behavior Policy
 
@@ -191,67 +178,36 @@ The information contained in the course syllabus, other than the grade and absen
 ## Schedule
 
 ```
-Week 1
-23 Aug   Setup
-25 Aug   Setup
+Week 1   (1/11-1/15): Course Introduction and Setup
 
-Week 2
-30 Aug   Hello (Strings)
-01 Sep   Hello
+Week 2   (1/16-1/22): Writing your first python program
 
-Week 3
-06 Sep   Labor Day
-08 Sep   Assignment 1: Salutations
+Week 3   (1/23-1/29): Hello (Strings), HW1: 01_salutations, Practice Quizzes 1-3
 
-Week 4
-13 Sep   Picnic (Lists)
-15 Sep   Assignment 2: Sum
+Week 4   (1/30-2/5) : Picnic (Lists), HW2: 02_sum, Practice Quizzes 4-6   
 
-Week 5
-20 Sep   Jump the Five (Dictionaries)
-22 Sep   Assignmen 3: Solfege; Quiz 2
+Week 5   (2/6-2/12) : Jump the Five (Dictionaries), HW3: 03_solfege, Practice Quizzes 7-9
 
-Week 6
-27 Sep   Howler (Files)
-29 Sep   Assignment 4: TBD; Quiz 3
+Week 6   (2/13-2/19): Howler (Files), HW4: 04_cat, Practice Quizzes 10-12
 
-Week 7
-04 Oct   Words Count (Files, algorithms)
-06 Oct   Assignment 6: TBD; Quiz 5
+Week 7   (2/20-2/26): Words Count (Files, algorithms), HW5: 05_proteins, Practice Quizzes 13-15
 
-Week 8
-11 Oct   Apples and Bananas (Regular expressions, refactoring)
-13 Oct   Assignment 7: TBD; Quiz 6
+Week 8   (2/27-3/5) : Apples and Bananas (Regular expressions, refactoring), HW6: 06_common, Practice Quizzes 16-18
 
-Week 9
-18 Oct   Dial-a-Curse/Telephone/Ransom (Randomness)
-20 Oct   Assignment 8: TBD; Quiz 7
+Week 9   (3/6-3/12) : Spring Break!
 
-Week 10
-25 Oct   Bottles of Beer/Twelve Days of Christmas (Algorithms)
-27 Oct   Assignment 9: TBD; Quiz 8
+Week 10  (3/13-3/19): Dial-a-Curse/Telephone/Ransom (Randomness), HW7: 07_iupac, Practice Quizzes 19-21
 
-Week 11
-01 Nov   WOD (Parsing CVS files)
-03 Nov   Assignment 10: TBD; Quiz 9
+Week 11  (3/20-3/26): Bottles of Beer/Twelve Days of Christmas (Algorithms), HW8: 08_kmers, Practice Quizzes 22-24  
 
-Week 12
-08 Nov   Password (Randomness)
-10 Nov   Assignment 11: TBD; Quiz 10
+Week 12  (3/27-4/2) : WOD (Parsing CVS files), HW9: 09_fasta, Practice Quizzes 25-27
 
-Week 13
-15 Nov   Tic-Tac-Toe (State)
-17 Nov   Assignment 12: TBD; Quiz 11
+Week 13  (4/3-4/9)  : Password (Randomness), HW10: 10_conserved, Practice Quizzes 28-30
 
-Week 14
-22 Nov   Tic-Tac-Toe (Types)
-24 Nov   Quiz 12
+Week 14  (4/10-4/16): Tic-Tac-Toe (State), HW11: 11_run_length, Practice Quizzes 31-33
 
-Week 15
-29 Nov   TBD
-01 Dec   TBD
+Week 15  (4/17-4/23): Tic-Tac-Toe (Types), HW12: 12_run_length, Practice Quizzes 34-36
 
-Week 16
-06 Dec   Projects
-08 Dec   Projects
+Week 16-17 (4/24-5/3): Projects 
+
 ```
