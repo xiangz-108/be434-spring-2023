@@ -52,7 +52,6 @@ With that, you now should be able _clone_ or copy down the contents of the repo 
 * Use the "Filter your repositories" box to find "be434-spring-2023" in your GitHub Account
 * Select the "be434-spring-2023" and click the "Clone" button to copy the repository to your local directory
 
-My original GitHub repo (that you cloned) is an _upstream_ source for your repository. This means that I can make updates throughout the semester, and you can get those changes by clicking on the tab in your Github Desktop called "Fetch origin". So your repository will always be up to date with mine. I don't expect to make many changes, and I will notify you in D2L if I do...
 
 ## Authors
 
