@@ -1,7 +1,8 @@
-# BE434/535 Fall 2021
+# BE434/535 Spring 2023
 
 See the syllabus in the "docs" directory.
 
-## Author
+## Authors
 
+Bonnie Hurwitz <bhurwitz@arizona.edu>
 Ken Youens-Clark <kyclark@gmail.com>
