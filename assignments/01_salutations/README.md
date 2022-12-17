@@ -4,9 +4,58 @@ Create Python program called `saluations.py` that will print a friendly greeting
 
 ## Installing Prerequsite Modules
 
-You will need several modules moving forward which I have included in the file _requirements.txt_:
+You will need several Python modules moving forward which I have included in the file _requirements.txt_. To install these modules you can pull up a terminal in VS code from the main menu Terminal -> New Terminal. This will create a terminal in the bottom panel and the following Unix commands can be used to install all requirements.
+
+First let's make sure that Python is installed where we think it is:
 
 ```
+$ ls /usr/local/bin
+```
+Do you see python3.11 and pip3.11 listed in this directory? Great! Glad they are there, if not return to the setup document in "docs"
+
+Next, we will need to make sure that we are referring to this version of python when installing modules. Otherwise these modules might end up somewhere unexpected!
+
+You will need to ensure that this version of python is included in your `$PATH`. First check what Unix shell you are using:
+
+```
+$ echo $SHELL
+```
+
+If are using the `bash` shell, you can edit _~/.bashrc_. If are using the `zsh` shell, you can edit _~/.zshrc_. 
+For instance, you can use `nano`:
+
+```
+$ nano ~/.bashrc
+```
+
+And add these lines into the .bashrc file
+```
+alias python=/usr/local/bin/python3.11
+alias python3=/usr/local/bin/python3.11
+alias pip=/usr/local/bin/pip3.11
+alias pip3=/usr/local/bin/pip3.11
+```
+
+To make these changes take effect you need to "source" the .bashrc file like so:
+```
+$ source ~/.bashrc
+```
+
+Let's check if it worked
+```
+$ which python
+python: aliased to /usr/local/bin/python3.11
+```
+
+Now we are ready to install modules that this version of python can use. Be sure you are in the right directory.
+
+```
+$ pwd
+```
+You should see something like this: "/Users/bhurwitz/Documents/GitHub/be434-spring-2023". This is the directory where your Github repository is installed on your computer, with your user name not mine!
+
+```
+$ cd assignments/01_salutations
 $ cat requirements.txt
 pytest
 pylint
@@ -19,25 +68,28 @@ pytest-mypy
 pytest-pylint
 ```
 
-You can install all these modules using the following command:
+Now you can install all of the requirements with a single command!
 
 ```
 python3 -m pip install -r requirements.txt
 ```
 
 Also note that "pylint" may complain about the variable `rv` (return value) that is in the _test.py_ file.
-This is a perfectly fine variable name, IMHO, so to silence this warning, create your own configuration file like so:
+This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
 
 ```
 pylint --generate-rcfile > ~/.pylintrc
 ```
 
-Then edit that file to set the following line.
-Note that this should be one continuous line, but I've broken it here for display:
+Then edit that file to add the following line after "MAIN". Note that this should be one continuous line, but I've broken it here for display:
 
 ```
 disable=too-many-locals,invalid-name,too-many-statements,too-many-arguments,\
 cell-var-from-loop,wrong-import-order
+``` 
+
+```
+nano ~/.pylintrc
 ```
 
 ## Installing new.py Into Your PATH
@@ -69,11 +121,17 @@ I suggest you create a directory in your `$HOME` (which is often written using t
 It's common to create a _~/local_ or _~/.local_ (so it's hidden) to install software, and inside of that a _bin_ directory:
 
 ```
+mkdir ~/.local
 mkdir ~/.local/bin
 ```
 
-You will need to ensure that this directory is included in your `$PATH`.
-If are using the `bash` shell, you can edit _~/.bashrc_ (or possibly _~/.bash_profile_ or even _~/.profile_).
+You will need to ensure that this directory is included in your `$PATH`. First check what Unix shell you are using:
+
+```
+echo $SHELL
+```
+
+If are using the `bash` shell, you can edit _~/.bashrc_. If are using the `zsh` shell, you can edit _~/.zshrc_. 
 For instance, you can use `nano`:
 
 ```
@@ -90,12 +148,6 @@ Then use the `source` command to read this file and alter your `$PATH`:
 
 ```
 source ~/.bashrc
-```
-
-The dot (`.`) is an alias for `source` when it is used as a command:
-
-```
-. ~/.bashrc
 ```
 
 You can view your `$PATH` to ensure this directory is included:
@@ -185,7 +237,7 @@ Sup, Dude!
 
 ## Testing
 
-The test suite will require the modules pytest, flake8, and pylint which you can install with the following command:
+The test suite will require the modules pytest, flake8, and pylint which you can install with the following command (if you have not already installed these using the requirements.txt from above):
 
 ```
 $ python3 -m pip install pytest flake8 pylint
@@ -230,6 +282,6 @@ test.py::test_all_options PASSED                                         [100%]
 
 Your grade is whatever percentage of tests your code passes.
 
-## Author
+## Authors
 
-Ken Youens-Clark <kyclark@gmail.com>
+Bonnie Hurwitz <bhurwitz@arizona.edu> and Ken Youens-Clark <kyclark@gmail.com>
