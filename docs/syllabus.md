@@ -206,7 +206,7 @@ Week 13  (4/3-4/9)  : Password (Randomness), HW10: 10_conserved, Practice Quizze
 
 Week 14  (4/10-4/16): Tic-Tac-Toe (State), HW11: 11_run_length, Practice Quizzes 31-33
 
-Week 15  (4/17-4/23): Tic-Tac-Toe (Types), HW12: 12_run_length, Practice Quizzes 34-36
+Week 15  (4/17-4/23): Tic-Tac-Toe (Types), HW12: 12_grep, Practice Quizzes 34-36
 
 Week 16-17 (4/24-5/3): Projects 
 
