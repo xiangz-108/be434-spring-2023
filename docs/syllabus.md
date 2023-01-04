@@ -23,7 +23,7 @@ Some experience programming Python is useful but not required.
 - Instructor: Bonnie Hurwitz, Associate Professor, Biosystems Engineering
 - Office: Bio5 Keating, Room 223 
 - E-mail: bhurwitz@arizona.edu
-- Office Hours: 9:00-10:00 AM W/F on Zoom (https://arizona.zoom.us/my/bonniehurwitz)
+- Office Hours: 9:30-10:30 AM Wednesday on Zoom (https://arizona.zoom.us/my/bonniehurwitz)
 - Course Websites: https://github.com/bhurwitz33/be434-spring-2023
 
 ## Course Objectives
