@@ -4,11 +4,11 @@ We will be using Slack to communicate with each other as a class. Slack is a com
 
 ## Getting a free Slack account
 
-To get started, you will need to establish a free Slack account. To do this, go [here] (https://slack.com/get-started#/create) and create a new account using your university email.    
+To get started, you will need to establish a free Slack account. To do this, go [here](https://slack.com/get-started#/create) and create a new account using your university email.    
 
 ## Downloading Slack
 
-Next, you will need to install Slack on your computer and login. Download the PC version [here] (https://slack.com/downloads/pc), and the Mac version [here] (https://slack.com/downloads/mac). You can also download these applications from slack.com by navigating to "Product" in the menu bar and selecting "Download Slack". Once you have downloaded the application, go through the installation process and login using the account you just established. 
+Next, you will need to install Slack on your computer and login. Download the PC version [here](https://slack.com/downloads/pc), and the Mac version [here](https://slack.com/downloads/mac). You can also download these applications from slack.com by navigating to "Product" in the menu bar and selecting "Download Slack". Once you have downloaded the application, go through the installation process and login using the account you just established. 
 
 ## The 2023 Biosystems Analytics Workspace
 
@@ -23,7 +23,7 @@ You can also use an @mention, to ping a particular classmate or me (your instruc
 
 ## Etiquette tips for using Slack
 
-[Here] (https://slack.com/blog/collaboration/etiquette-tips-in-slack) are some quick etiquette tips for using Slack and making your communication with our class effective!
+[Here](https://slack.com/blog/collaboration/etiquette-tips-in-slack) are some quick etiquette tips for using Slack and making your communication with our class effective!
 
 ## Author
 
