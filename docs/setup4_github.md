@@ -20,6 +20,11 @@ Next, go to the [course repository](https://github.com/bhurwitz33/be434-spring-2
 
 * Go to [the course repo](https://github.com/bhurwitz33/be434-spring-2023)
 * Click the "Fork" button (upper-right)
+* Indicate that you will use it for personal reasons
+
+![1git](./images/1_github_repo_to_fork.png "Copying a repository")
+
+![2git](./images/2_github_plan_for_fork.png "Plan for the copy")
 
 This will create a new repository in your Github account. 
 
@@ -32,6 +37,8 @@ All your assignments will be pushed to GitHub where I will pull the code to my m
 * Click the green "Invite a collaborator" button
 * Add "bhurwitz33" and send
 
+![3git](./images/3_github_add_a_collaborator.png "Share your repo with instructor")
+
 ## Download your GitHub course repository to your laptop where you can work on python code locally
 
 Next, you will need to create a copy of this repository on your laptop so you can work on python code locally, and then turn it in by pushing the code back to Github (more on this next). I recommend using [the Github Desktop](https://desktop.github.com/)
@@ -41,20 +48,21 @@ Next, you will need to create a copy of this repository on your laptop so you ca
 * From the top menu bar, select Github Desktop, then select Preferences, go to Integrations, select Visual Studio Code as the "External Editor"
 * Be sure to "save" your Preferences
 
+![4git](./images/4_github_account_login.png "Login to GitHub on Desktop")
+
+![5git](./images/5_github_integrations_vscode.png "Integrate Desktop with VS Code")
+
 With that, you now should be able _clone_ or copy down the contents of the repo onto your local machine (e.g., your laptop). 
 
 * Using GitHub desktop, Go to File in the top menu, and select "Clone Repository"
 * Use the "Filter your repositories" box to find "be434-spring-2023" in your GitHub Account
 * Select the "be434-spring-2023" and click the "Clone" button to copy the repository to your local directory
 
-## Now you can edit code in VS Code and push this code back to Github!
+![6git](./images/6_github_clone_be434_repo_to_desktop.png "Find your repository")
 
-Congrats! Now that you have your first Github account and repository created, you can push and pull to/from that web-based GitHub repository. This is similar to Google drive where you might have a copy of a file locally on your computer, and also a copy that you uploaded to Google Drive. The main difference is that these files are connected, so VSCode knows that a file is new or modified compared to what you have in your web-based GitHub repository. 
+![7git](./images/7_github_clone_your_repository.png "Clone your repository")
 
-* Jump over to VS code from the Github Desktop by clicking on "Open VS Code" from the main page of your Github Desktop.
-* Make a "hello.py" file using VS Code in this repository under 01_salutations
-* Try to "commit" this new file from Github Desktop. 
-* It is good practice to add a detailed "commit message" in the description box that details your changes. If this is the first time you are "committing" aka saving a file you might want to add a meaage like this "Initial commit hello.py. This program says hello to a name the user provides". Once you have "commited" you then have to "push" to send the code to your GitHub repository using the "push to origin" command at the top right. This all sounds complicated! But, fear not, we will do this over and over during the semester and you will quickly get the hang of it.
+Now that you have your first Github account and repository created, you can push and pull to/from your web-based GitHub repository and your computer. This is similar to Google drive where you might have a copy of a file locally on your computer, and also a copy that you uploaded to Google Drive. The main difference is that these files are connected, so GitHub knows that a file is new or modified on your laptop compared to what you have in your web-based GitHub repository.
 
 ## Authors
 

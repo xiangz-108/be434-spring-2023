@@ -98,7 +98,7 @@ Point Breakdown per Category:
 | Category | # Assessments | Points per assessment | Points total |
 | -------- | ------------- | --------------------- | ------------ |
 | Homework (48%) | 12 | 40 | 480 |
-| Quizzes (36%) | 36 | 10 | 360 |
+| Quizzes (36%) | 12 | 30 | 360 |
 | Project (16%) | 1 | 160 | 160 |
 | Total | | | 1000 |
 
@@ -116,23 +116,57 @@ Dispute of Grade Policy: Disputes on a grade for an assignment, quiz, or exam mu
 
 ## Weekly Learning Modules
 
-Each week's learning module contains: instructional videos for 3 units, 3 practice quizzes for each unit in the module, and a homework assignment. All homework assignments are on the course GitHub site https://github.com/bhurwitz33/be434-spring-2023 and linked in D2L. All readings, live-coding videos, and quizzes are on D2L. 
+Each week's learning module contains: reading assignments, instructional videos, a practice quiz, and a homework assignment. All homework assignments are on the course GitHub site https://github.com/bhurwitz33/be434-spring-2023 and linked in D2L. All readings, videos, and quizzes are on D2L. 
 
 ## Homework
 
-The homework provides you with practice in scripting and analytics. Homework is turned in by committing your code to your GitHub repository that is shared with the instructor. On Monday of following week, th instructor will download your code from GitHub. Your grade will be the percentage of tests you pass in the provided test suite. We encourage group work (via Slack) but be sure the code you turn in has been independently written (see Code of Academic Integrity below). 
+The homework provides you with practice in scripting and analytics. Homework is turned in by committing your code to your GitHub repository that is shared with the instructor. Each week's homework is due that on Sunday at 11:59pm that week. On the following Monday, the instructor will download your code from GitHub. Your grade will be based on the percentage of tests you pass in the provided test suite. We encourage group work (via Slack) but be sure the code you turn in has been independently written (see Code of Academic Integrity below). 
 
 ## Quizzes
 
-Each week, you will be tested on the videos and reading for that week (see the schedule in D2L). Each weekly module has three units with 1 practice quiz per unit. Students can take the quizzes as many times as they would like to learn the material and improve their scores.
+Each week, you will be tested on the videos and reading for that week (see the schedule) through a Practice Quiz on D2L. Students can take the quiz as many times as they would like to learn the material and improve their scores.
 
 ## Final Project
 
-At the end of the semester, graduateb students will implement a novel program in Python via the class project that demonstrates the core programming concepts for the class. The project will include documentation (a README), a program, a test suite, and any required input/data to run the program. The program may be a game, a solution to a problem from something like Rosalind.info, or some program needed by your lab or PI to further your research. Undergraduate students will work with a graduate student to suggest tests that should be included in the test suite for the graduate student's project. Documentation for the test suite proposed by the undergraduate will be uploaded to their Githib repository. 
+At the end of the semester, each student will implement a program in Python via the class project that demonstrates the core programming concepts for the class. Students can select from several progamming projects, wherein Graduate students will select from more difficult problems than Undergraduates. The final project should include documentation (a README), a program, a test suite, and any required input/data to run the program.
 
 ## Scheduled Topics/Activities
 
-TBD
+```
+Week 1: Course Introduction and Setup
+
+Week 2: Writing your first python program
+
+Week 3: Hello (Strings), HW1: 01_salutations, Practice Quiz 1
+
+Week 4: Picnic (Lists), HW2: 02_sum, Practice Quiz 2   
+
+Week 5: Jump the Five (Dictionaries), HW3: 03_solfege, Practice Quiz 3
+
+Week 6: Howler (Files), HW4: 04_cat, Practice Quiz 4
+
+Week 7: Words Count (Files, algorithms), HW5: 05_proteins, Practice Quiz 5
+
+Week 8: Apples and Bananas (Regular expressions, refactoring), HW6: 06_common, Practice Quiz 6
+
+Week 9: Spring Break!
+
+Week 10: Dial-a-Curse/Telephone/Ransom (Randomness), HW7: 07_iupac, Practice Quiz 7
+
+Week 11: Bottles of Beer/Twelve Days of Christmas (Algorithms), HW8: 08_kmers, Practice Quiz 8
+
+Week 12: WOD (Parsing CVS files), HW9: 09_fasta, Practice Quiz 9
+
+Week 13: Password (Randomness), HW10: 10_conserved, Practice Quiz 10
+
+Week 14: Tic-Tac-Toe (State), HW11: 11_run_length, Practice Quiz 11
+
+Week 15: Tic-Tac-Toe (Types), HW12: 12_grep, Practice Quiz 12
+
+Week 16-17 (4/24-5/3): Coding Projects 
+
+```
+
 
 ## Honors Credit
 
@@ -174,40 +208,3 @@ http://www.registrar.arizona.edu/personal-information/family-educational-rights-
 ## Subject to Change Statement
 
 The information contained in the course syllabus, other than the grade and absence policy, may be subject to change with advance notice, as deemed appropriate by the instructor.
-
-## Schedule
-
-```
-Week 1   (1/11-1/15): Course Introduction and Setup
-
-Week 2   (1/16-1/22): Writing your first python program
-
-Week 3   (1/23-1/29): Hello (Strings), HW1: 01_salutations, Practice Quizzes 1-3
-
-Week 4   (1/30-2/5) : Picnic (Lists), HW2: 02_sum, Practice Quizzes 4-6   
-
-Week 5   (2/6-2/12) : Jump the Five (Dictionaries), HW3: 03_solfege, Practice Quizzes 7-9
-
-Week 6   (2/13-2/19): Howler (Files), HW4: 04_cat, Practice Quizzes 10-12
-
-Week 7   (2/20-2/26): Words Count (Files, algorithms), HW5: 05_proteins, Practice Quizzes 13-15
-
-Week 8   (2/27-3/5) : Apples and Bananas (Regular expressions, refactoring), HW6: 06_common, Practice Quizzes 16-18
-
-Week 9   (3/6-3/12) : Spring Break!
-
-Week 10  (3/13-3/19): Dial-a-Curse/Telephone/Ransom (Randomness), HW7: 07_iupac, Practice Quizzes 19-21
-
-Week 11  (3/20-3/26): Bottles of Beer/Twelve Days of Christmas (Algorithms), HW8: 08_kmers, Practice Quizzes 22-24  
-
-Week 12  (3/27-4/2) : WOD (Parsing CVS files), HW9: 09_fasta, Practice Quizzes 25-27
-
-Week 13  (4/3-4/9)  : Password (Randomness), HW10: 10_conserved, Practice Quizzes 28-30
-
-Week 14  (4/10-4/16): Tic-Tac-Toe (State), HW11: 11_run_length, Practice Quizzes 31-33
-
-Week 15  (4/17-4/23): Tic-Tac-Toe (Types), HW12: 12_grep, Practice Quizzes 34-36
-
-Week 16-17 (4/24-5/3): Projects 
-
-```
