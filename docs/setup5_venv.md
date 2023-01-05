@@ -21,13 +21,44 @@ venv allows you to manage separate package installations for different projects 
 From within VS Code, you can create non-global environments, using virtual environments by opening the Command Palette (⇧⌘P), start typing "Python: Create Environment command" to search, and then select the command.
 
 The command presents a list of environment types: Venv or Conda. Select Venv.
-![venv](./images/1_venv_select_env_type.png "Selecting a venv type")
+![1venv](./images/1_venv_select_env_type.png "Selecting a venv type")
 
-For a Mac, you will need to follow the folowing steps:
+The the command presents a list of interpreters that can be used as a base Python for the new virtual environment. Select Python Version 3.11.1 that we just installed.
+![2venv](./images/2_venv_select_python_version.png "Selecting a venv python version")
 
-For a PC, you will need to follow the following steps:
 
-* Jump over to VS code from the Github Desktop by clicking on "Open VS Code" from the main page of your Github Desktop.
-* In VS Code, navigate to the 01_salutations directory and create a new file called "hello.py" in the directory called 01_salutations (hint, you can do this from the )
-* Try to "commit" this new file from Github Desktop. 
-* It is good practice to add a detailed "commit message" in the description box that details your changes. If this is the first time you are "committing" aka saving a file you might want to add a meaage like this "Initial commit hello.py. This program says hello to a name the user provides". Once you have "commited" you then have to "push" to send the code to your GitHub repository using the "push to origin" command at the top right. This all sounds complicated! But, fear not, we will do this over and over during the semester and you will quickly get the hang of it.
+### Step 3: Install the Python packages we need for this class.
+
+Once you have created your vitual environment, you can install Python packages in that environment. In Python, packages are how you obtain any number of useful code libraries. For example, in this class we will use several packages that will help us to test, debug and format code. These are all contained in the requirement.txt file in the docs directory in the Github repository.  
+
+First we need to open a terminal window:
+![3venv](./images/vscode_open_terminal.png "Opening a terminal in VS Code")
+
+For a Mac, you will need to enter the following commands in the terminal:
+'''
+source .venv/bin/activate
+python3 -m pip install pytest
+python3 -m pip install pylint
+python3 -m pip install flake8
+python3 -m pip install yapf
+python3 -m pip install black
+python3 -m pip install mypy
+python3 -m pip install pytest-flake8
+python3 -m pip install pytest-mypy
+python3 -m pip install pytest-pylint
+'''
+
+For a PC, you will need to enter the following commands:
+'''
+.venv\scripts\activate
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+python -m pip install pytest
+python -m pip install pylint
+python -m pip install flake8
+python -m pip install yapf
+python -m pip install black
+python -m pip install mypy
+python -m pip install pytest-flake8
+python -m pip install pytest-mypy
+python -m pip install pytest-pylint
+'''
