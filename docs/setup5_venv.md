@@ -46,7 +46,20 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 Now you can install the python packages we need into your virtual environment:
 
+You can do this with a single command:
+
+For Mac
 ```
+python3 -m pip install -r ./docs/requirements.txt
+```
+
+For PC
+```
+python -m pip install -r ./docs/requirements.txt
+```
+
+Or by installing each one individually...
+
 For a Mac, you will need to enter the following commands in the terminal:
 ```
 python3 -m pip install pytest
@@ -71,4 +84,22 @@ python -m pip install mypy
 python -m pip install pytest-flake8
 python -m pip install pytest-mypy
 python -m pip install pytest-pylint
+```
+
+## Fixing a small issue with pylint
+Now you have installed all of the python packages that we need for testing your code! Congrats! When we start testing our code (in the weeks to come), you might find that "pylint" complains about the variable `rv` (return value) that is in the _test.py_ file of each homework. This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
+
+```
+pylint --generate-rcfile > ~/.pylintrc
+```
+
+Then edit that file to add the following line after "MAIN". Note that this should be one continuous line, but I've broken it here for display:
+
+```
+disable=too-many-locals,invalid-name,too-many-statements,too-many-arguments,\
+cell-var-from-loop,wrong-import-order
+``` 
+
+```
+nano ~/.pylintrc
 ```
