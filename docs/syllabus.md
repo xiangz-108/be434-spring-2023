@@ -15,7 +15,7 @@ These skills are taught by implementing real-world coding examples to manipulate
 
 ## Course Prerequisites or Corequisites
 
-An Apple, Linux, or Windows computer. 
+An Apple or Windows computer. 
 Some experience programming Python is useful but not required.
 
 ## Instructor and Contact Information
@@ -43,7 +43,7 @@ This course is designed to provide students with a foundational understanding of
 - Use and control randomness; 
 - Use these skills to write challenging games in Python.
 
-Graduate students will go beyond these basic learning outcomes to create their own coding project that applies basic coding principles to solve more advanced challenges. Undergraduate students will work with a graduate student(online via slack) to develop ideas for what needs to be in the test suite for the code (that the graduate student will implement). 
+All students will complete a class project at the end of the semester, however, Graduate students will be required to complete a more detailed and complicated project than Undergraduates. 
 
 ## Course Format and Teaching Methods
 
@@ -51,7 +51,7 @@ The course is taught using an asynchronous online format, that allows students t
 
 ## Absence and Class Participation Policy
 
-Watching weekly videos and completing quizzes and assignments is vital to the class. As such, all assignments are due at the end of the week. Students who miss assignments due to illness or emergency are required to bring documentation from their health-care provider or other relevant, professional third parties. Failure to submit third-party documentation will result in missing/ungraded assignments for the week.
+Watching weekly videos and completing quizzes and assignments is vital to the class. As such, all assignments are due at the end of the week (Sunday at 11:59 pm). Students who miss assignments due to illness or emergency are required to bring documentation from their health-care provider or other relevant, professional third parties. Failure to submit third-party documentation will result in missing/ungraded assignments for the week.
 
 The UA’s policy concerning Class Attendance, Participation, and Administrative Drops is available at http://catalog.arizona.edu/policy/class-attendance-participation-and-administrative-drop 
 
@@ -65,7 +65,7 @@ Students who register after the first class meeting may make up missed assignmen
 
 ## Course Communications 
 
-Online communication, quizzes, and grading will be conducted through D2L and Slack. Course materials (video lectures, readings, homework assignments, and quizzes) will be available on D2L and the course GitHub site (https://github.com/bhurwitz33/be434-spring-2023) The GitHub privacy statement is located here: https://help.github.com/articles/github-privacy-statement. Slack (https://slack.com/) will be used for online class discussion forums, and each student will be invited to the slack channel at the beginning of the semester. 
+Online communication, quizzes, and grading will be conducted through D2L and Slack. Course materials (video lectures, readings, homework assignments, and quizzes) will be available on D2L and the course GitHub site (https://github.com/bhurwitz33/be434-spring-2023). The GitHub privacy statement is located here: https://help.github.com/articles/github-privacy-statement. Slack (https://slack.com/) will be used for online class discussion forums, and each student will be invited to the slack channel at the beginning of the semester. 
 
 ## Required Texts or Readings
 
@@ -83,7 +83,7 @@ All texts are available free of charge through the University of Arizona online 
 
 ## Required or Special Materials
 
-Students will be required to create a (free) account on GitHub to download and turn in assignments. Students must install Github Desktop (https://desktop.github.com/) on their laptops. Students must also install Python on their laptops for completing and turning in assignments. Windows users will need to install Windows Subsystem for Linux (WSL) in order to have a functional command-line interface. Students will also need to install an editor. In this class, we use Visual Studio Code (https://code.visualstudio.com/). Information on accessing these resources and detailed installation instructions can be found under Getting Started in D2L and the setup.md file on the course Github site (https://github.com/bhurwitz33/be434-spring-2023).
+Students will be required to create a (free) account on GitHub to download and turn in assignments. Students must install Github Desktop (https://desktop.github.com/) on their laptops. Students must also install Python on their laptops for completing and turning in assignments. Students will also need to install Visual Studio Code (https://code.visualstudio.com/), an code editor. Information on accessing these resources and detailed installation instructions can be found under "Start here" in D2L. Detailed informaton on how to use and install all of these resources is available in the docs folder on the course Github site (https://github.com/bhurwitz33/be434-spring-2023) and via D2L.
 
 ## Required Extracurricular, Activities
 
@@ -116,7 +116,7 @@ Dispute of Grade Policy: Disputes on a grade for an assignment, quiz, or exam mu
 
 ## Weekly Learning Modules
 
-Each week's learning module contains: reading assignments, instructional videos, a practice quiz, and a homework assignment. All homework assignments are on the course GitHub site https://github.com/bhurwitz33/be434-spring-2023 and linked in D2L. All readings, videos, and quizzes are on D2L. 
+Each week's learning module consists of: reading assignments, instructional videos, a practice quiz, and a homework assignment. All homework assignments are on the course GitHub site https://github.com/bhurwitz33/be434-spring-2023 and linked in D2L. All readings, videos, and quizzes are on D2L. 
 
 ## Homework
 
@@ -166,7 +166,6 @@ Week 15: Tic-Tac-Toe (Types), HW12: 12_grep, Practice Quiz 12
 Week 16-17 (4/24-5/3): Coding Projects 
 
 ```
-
 
 ## Honors Credit
 
