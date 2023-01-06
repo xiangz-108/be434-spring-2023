@@ -2,102 +2,15 @@
 
 Create Python program called `saluations.py` that will print a friendly greeting.
 
-## Installing Prerequsite Modules
-
-You will need several Python modules moving forward which I have included in the file _requirements.txt_. To install these modules you can pull up a terminal in VS code from the main menu Terminal -> New Terminal. This will create a terminal in the bottom panel and the following Unix commands can be used to install all requirements.
-
-First let's make sure that Python is installed where we think it is:
-
-```
-$ ls /usr/local/bin
-```
-Do you see python3.11 and pip3.11 listed in this directory? Great! Glad they are there, if not return to the setup document in "docs"
-
-Next, we will need to make sure that we are referring to this version of python when installing modules. Otherwise these modules might end up somewhere unexpected!
-
-You will need to ensure that this version of python is included in your `$PATH`. First check what Unix shell you are using:
-
-```
-$ echo $SHELL
-```
-
-If are using the `bash` shell, you can edit _~/.bashrc_. If are using the `zsh` shell, you can edit _~/.zshrc_. 
-For instance, you can use `nano`:
-
-```
-$ nano ~/.bashrc
-```
-
-And add these lines into the .bashrc file
-```
-alias python=/usr/local/bin/python3.11
-alias python3=/usr/local/bin/python3.11
-alias pip=/usr/local/bin/pip3.11
-alias pip3=/usr/local/bin/pip3.11
-```
-
-To make these changes take effect you need to "source" the .bashrc file like so:
-```
-$ source ~/.bashrc
-```
-
-Let's check if it worked
-```
-$ which python
-python: aliased to /usr/local/bin/python3.11
-```
-
-Now we are ready to install modules that this version of python can use. Be sure you are in the right directory.
-
-```
-$ pwd
-```
-You should see something like this: "/Users/bhurwitz/Documents/GitHub/be434-spring-2023". This is the directory where your Github repository is installed on your computer, with your user name not mine!
-
-```
-$ cd assignments/01_salutations
-$ cat requirements.txt
-pytest
-pylint
-flake8
-yapf
-black
-mypy
-pytest-flake8
-pytest-mypy
-pytest-pylint
-```
-
-Now you can install all of the requirements with a single command!
-
-```
-python3 -m pip install -r requirements.txt
-```
-
-Also note that "pylint" may complain about the variable `rv` (return value) that is in the _test.py_ file.
-This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
-
-```
-pylint --generate-rcfile > ~/.pylintrc
-```
-
-Then edit that file to add the following line after "MAIN". Note that this should be one continuous line, but I've broken it here for display:
-
-```
-disable=too-many-locals,invalid-name,too-many-statements,too-many-arguments,\
-cell-var-from-loop,wrong-import-order
-``` 
-
-```
-nano ~/.pylintrc
-```
 
 ## Installing new.py Into Your PATH
+I hate writing code from scratch! This week you learned about using a program called `new.py` that will create a program for you to start from. Now, we need to add this program to our PATH, so we can just use it without having to figure out where it is!
 
 In the _bin_ directory of your repo, you should find a program called `new.py` that will help you make a new Python program.
 From this directory, you can provide the full path using `..` to indicate the parent directory:
 
 ```
+$ cd ./assignments/01_salutations
 $ ../../bin/new.py -h
 usage: new.py [-h] [-n NAME] [-e EMAIL] [-p PURPOSE] [-f] program
 
@@ -166,7 +79,7 @@ Verify that the program can be found using `which`:
 
 ```
 $ which new.py
-/Users/kyclark/.local/bin/new.py
+/Users/bhurwitz/.local/bin/new.py
 ```
 
 ## Getting Started with new.py
@@ -237,7 +150,7 @@ Sup, Dude!
 
 ## Testing
 
-The test suite will require the modules pytest, flake8, and pylint which you can install with the following command (if you have not already installed these using the requirements.txt from above):
+The test suite will require the modules pytest, flake8, and pylint which you can install with the following command (if you have not already installed these using the requirements.txt during setup):
 
 ```
 $ python3 -m pip install pytest flake8 pylint
