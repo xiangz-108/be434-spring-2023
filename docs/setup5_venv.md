@@ -2,7 +2,7 @@
 
 When you installed Python on your computer (see setup2_python) you installed it globally on your computer. But, working in a global environment can be tricky because different versions of python packages may not play nicely together. To avoid any conflicts, developers usually create a virtual environment for each project and then install the packages they need in that virtual environment. When you then run a Python program within that environment, you know that it's running against only those specific packages. 
 
-## Setting up a virtual environment in our be433-spring-2023 folder
+## Setting up a virtual environment in our be434-spring-2023 folder
 
 We are going to create a virtual environment in VS Code for our class. We will install several python packages that will help us to test, debug and format our code in this virtual environment. 
 
@@ -22,9 +22,9 @@ The the command presents a list of interpreters that can be used as a base Pytho
 ![2venv](./images/2_venv_select_python_version.png "Selecting a venv python version")
 
 
-### Step 2: Install the Python packages we need for this class.
+### Step 2: Install the Python modules we need for this class.
 
-Once you have created your vitual environment, you can install Python packages in that environment. In Python, packages are how you obtain any number of useful code libraries. For example, in this class we will use several packages that will help us to test, debug and format code. These are all contained in the requirement.txt file in the docs directory in the Github repository.  
+Once you have created your vitual environment, you can install Python modules in that environment. In Python, modules are how you obtain any number of useful code libraries. For example, in this class we will use several modules that will help us to test, debug and format code. These are all contained in the requirement.txt file in the docs directory in the be434-spring-2023 Github repository.  
 
 First we need to open a terminal window in VS Code:
 ![3venv](./images/vscode_open_terminal.png "Opening a terminal in VS Code")
@@ -33,6 +33,7 @@ Note, you should already have the be434-spring-2023 directory open in VS Code an
 ![4venv](./images/3_venv_activate_env.png "Activating a virtual environment")
 
 If this is not the case, be sure to open the be434-spring-2023 directory in VS Code and then activate the cirtual machine
+
 For a Mac, you will need to enter the following commands in the terminal:
 ```
 source .venv/bin/activate
@@ -44,9 +45,9 @@ For a PC, you will need to enter the following commands:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
 
-Now you can install the python packages we need into your virtual environment:
+Now you can install the python modules we need into your virtual environment:
 
-You can do this with a single command:
+You can do this with a single command (from the be343-spring-2023 folder):
 
 For Mac
 ```
@@ -87,7 +88,7 @@ python -m pip install pytest-pylint
 ```
 
 ## Fixing a small issue with pylint
-Now you have installed all of the python packages that we need for testing your code! Congrats! When we start testing our code (in the weeks to come), you might find that "pylint" complains about the variable `rv` (return value) that is in the _test.py_ file of each homework. This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
+Now you have installed all of the python modules that we need for testing your code! Congrats! When we start testing our code (in the weeks to come), you might find that "pylint" complains about the variable `rv` (return value) that is in the _test.py_ file of each homework. This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
 
 ```
 pylint --generate-rcfile > ~/.pylintrc
@@ -103,3 +104,4 @@ cell-var-from-loop,wrong-import-order
 ```
 nano ~/.pylintrc
 ```
+Use ctr-O & return to save the file, and ctr-X to exit
