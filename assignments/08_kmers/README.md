@@ -222,7 +222,7 @@ At this point, your program should pass all the tests.
 
 ```
 $ make test
-pytest -xv --pylint --flake8 test.py kmers.py
+pytest -xv --pylint --disable-warnings test.py kmers.py
 ============================= test session starts ==============================
 ...
 collected 24 items

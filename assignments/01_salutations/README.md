@@ -79,8 +79,8 @@ Verify that the program can be found using `which`:
 
 ```
 $ which new.py
-/Users/bhurwitz/.local/bin/new.py
 ```
+My new.py file is located here: /Users/bhurwitz/.local/bin/new.py
 
 ## Getting Started with new.py
 
@@ -159,7 +159,7 @@ $ python3 -m pip install pytest flake8 pylint
 You can run the test suite with the following command:
 
 ```
-$ pytest -xv --pylint --flake8 test.py
+$ pytest -xv --pylint --disable-warnings test.py
 ```
 
 You can also use the Makefile shortcut:

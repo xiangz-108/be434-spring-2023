@@ -87,6 +87,13 @@ python -m pip install pytest-mypy
 python -m pip install pytest-pylint
 ```
 
+```
+$ black # this command will format our code properly
+$ pytest # this command will test our code with default test discovery mechanism.
+$ mypy # this command will run type checks on our code with mypy.
+$ flake8 # this command will check code linting.
+```
+
 ## Fixing a small issue with pylint
 Now you have installed all of the python modules that we need for testing your code! Congrats! When we start testing our code (in the weeks to come), you might find that "pylint" complains about the variable `rv` (return value) that is in the _test.py_ file of each homework. This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
 

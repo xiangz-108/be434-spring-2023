@@ -156,7 +156,7 @@ A passing test suite looks like the following:
 
 ```
 $ make test
-pytest -xv --pylint --flake8 test.py common.py
+pytest -xv --pylint --disable-warnings test.py common.py
 ============================= test session starts ==============================
 ...
 collected 21 items

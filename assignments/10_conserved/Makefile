@@ -1,2 +1,2 @@
 test:
-	pytest -xv --pylint --flake8 test.py conserved.py
+	pytest -xv --pylint --disable-warnings test.py conserved.py

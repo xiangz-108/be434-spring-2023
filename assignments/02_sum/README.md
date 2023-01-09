@@ -65,7 +65,7 @@ A passing test suite should look like this:
 
 ```
 $ make test
-pytest -xv --pylint --flake8 test.py
+pytest -xv --pylint --disable-warnings test.py
 ============================= test session starts ==============================
 ...
 

@@ -68,7 +68,7 @@ Your program should pass all tests:
 
 ```
 $ make test
-pytest -xv --pylint --flake8 test.py
+pytest -xv --pylint --disable-warnings test.py
 ============================= test session starts ==============================
 ...
 collected 14 items

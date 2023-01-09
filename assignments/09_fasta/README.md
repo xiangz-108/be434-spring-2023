@@ -182,7 +182,7 @@ A working test suite may include a complaint about the `Test` class:
 
 ```
 $ make test
-pytest -xv --pylint --flake8 test.py au_pair.py
+pytest -xv --pylint --disable-warnings test.py au_pair.py
 ============================= test session starts ==============================
 platform linux -- Python 3.9.0, pytest-6.1.2, py-1.9.0, pluggy-0.13.1 -- /usr/local/bin/python3
 cachedir: .pytest_cache

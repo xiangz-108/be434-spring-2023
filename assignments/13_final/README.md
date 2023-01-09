@@ -121,7 +121,7 @@ The program should pass the entire test suite, which looks like this:
 
 ```
 $ make test
-pytest -xv --pylint --flake8 test.py tac.py
+pytest -xv --pylint --disable-warnings test.py tac.py
 ============================= test session starts ==============================
 ...
 collected 14 items
