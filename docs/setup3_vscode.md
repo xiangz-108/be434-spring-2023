@@ -1,6 +1,6 @@
 # Getting started with a Python Code Editor
 
-Code editors are fantastic resources that make it easy to write and edit code on your laptop. As part of this class, we will be using the VS Code editor to write and edit our Python programs. 
+Code editors (or Integrated Development Environment, IDEs) are fantastic resources that make it easy to write and edit code on your laptop. There are many code editors out there, but in this class, we will be using the VS Code editor to write and edit our Python programs. Code editors recognize the programming language we are coding in and highlight the syntax of the code making it easier to "see". In addition, code editors offer code completion options and can even suggest a Pytnon function for you to use based on a few letters. Amazing! IDEs will definitely make your life easier! I receommend learning as much as you can about VS Code to find out its capabilities and how it can help you in writing great code. For now, here are a few instruction to get you started. 
 
 ## Downloading and installing the VS Code editor
 
