@@ -1,7 +1,7 @@
 # Expanding DNA IUPAC Codes into Regular Expressions
 
 In this assignment, you will write a Python program called `iupac.py` that translates an IUPAC-encoded (https://www.bioinformatics.org/sms/iupac.html) string of DNA into a regular expression that will match all the possible strings of DNA.
-Following are the 
+Following are the iupac codes: 
 
 ```
 +------------+------+
@@ -39,6 +39,21 @@ You can use the REPL to verify that this works:
 'OK'
 ````
 
+## Be sure you are in your virtual environment
+Open the be434-spring-2023 directory in VS Code (in your GitHub repository) and then activate the virtual machine:
+
+For a Mac, you will need to enter the following commands in the terminal:
+```
+source .venv/bin/activate
+```
+
+For a PC, you will need to enter the following commands:
+```
+.venv\scripts\activate
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+
+## Usage
 Your program should accept the following arguments:
 
 1. One or more sequences as positional arguments
