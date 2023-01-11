@@ -23,9 +23,9 @@ Week 8   (2/27-3/5) : Apples and Bananas (Regular expressions, refactoring), HW6
 
 Week 9   (3/6-3/12) : Spring Break!
 
-Week 10  (3/13-3/19): Dial-a-Curse/Telephone/Ransom (Randomness), HW7: 07_iupac, Practice Quiz 7, TPP: Ch9
+Week 10  (3/13-3/19): Dial-a-Curse/Telephone/Ransom (Randomness), HW7: 07_iupac, Practice Quiz 7, TPP: Ch9,10,12
 
-Week 11  (3/20-3/26): Bottles of Beer/Twelve Days of Christmas (Algorithms), HW8: 08_kmers, Practice Quiz 8, TPP: Ch11
+Week 11  (3/20-3/26): Bottles of Beer/Twelve Days of Christmas (Algorithms), HW8: 08_kmers, Practice Quiz 8, TPP: Ch11,13
 
 Week 12  (3/27-4/2) : WOD (Parsing CVS files), HW9: 09_fasta, Practice Quiz 9, TPP: Ch19
 
