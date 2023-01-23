@@ -120,3 +120,7 @@ disable=too-many-locals,invalid-name,too-many-statements,too-many-arguments,cell
 nano ~/.pylintrc
 ```
 Use ctr-O & return to save the file, and ctr-X to exit
+
+## Author
+
+Bonnie Hurwitz <bhurwitz@arizona.edu> 

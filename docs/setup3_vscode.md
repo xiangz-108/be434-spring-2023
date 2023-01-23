@@ -30,5 +30,5 @@ Now you are all set to start writing Python code in VS Code!
 
 ## Author
 
-Bonnie Hurwitz <bhurwitz@arizona.edu> 
+Bonnie Hurwitz <bhurwitz@arizona.edu>
 
