@@ -1,4 +1,4 @@
-# Task 2: Installing Python and VSCode on your macOS Computer
+# Task 3: Installing Python, VS Code, and a virtual env on your macOS Computer
 
 In this class, we will be teaching you Python programming from the ground up! The best way to learn Python is by practicing as often as you can. By installing python directly on your laptop, you can practice anywhere and anytime you like, with or without an internet connection.
 
