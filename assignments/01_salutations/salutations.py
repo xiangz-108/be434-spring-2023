@@ -16,7 +16,6 @@ def get_args():
         description='Greetings and salutations',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-
     parser.add_argument('-g',
                         '--greeting',
                         help='A greeting',
@@ -30,7 +29,6 @@ def get_args():
                         metavar='str',
                         type=str,
                         default='Stranger')
-                        
 
     parser.add_argument('-e',
                         '--excited',
@@ -45,13 +43,12 @@ def main():
     """Make a jazz noise here"""
 
     args = get_args()
-    gre= args.greeting
-    nam= args.name
-    ex=args.excited
-    sym='.' if ex==False else '!'
+    gre = args.greeting
+    nam = args.name
+    ex = args.excited
+    sym = '.' if not ex else '!'
 
     print(f'{gre}, {nam}{sym}')
-
 
 
 # --------------------------------------------------
