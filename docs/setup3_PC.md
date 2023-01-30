@@ -20,7 +20,10 @@ If you have any trouble, here are a few extra links from the Microsoft website o
 Now that you have Ubuntu installed on your PC, you need to install the version of Python that we will be using for the class (Python 3.11.1). Note that Python version 3.10 comes with the Ubuntu installation. To install the latest Python, you will launch the Ubuntu app and use the following commands to install Python 3.11.1:
 
 ```
-sudo apt install python3.11.1
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.11
+python3 --version
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
 sudo update-alternatives --config python3
@@ -33,12 +36,14 @@ You can now check the installation to see where Python is installed and which ve
 ```
 which python3
 python3 --version
+pip3 --version
 ```
 
 These commands above should return the following:
 ```
 /usr/bin/python3
-Python 3.11.0rc1
+Python 3.11.1
+pip 22.0.2
 ```
 
 You will also need to update your $PATH to tell your computer where to find Python.
@@ -62,19 +67,31 @@ Code editors (or Integrated Development Environment, IDEs) are fantastic resourc
 
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop. We will write and edit python code using the Visual Studio code editor. Follow the directions on the VS Code website to download and install the version of [VS Code](https://code.visualstudio.com/) that is appropriate for your PC laptop.
 
-* You must install VS code by downloading and installing the application on your laptop from the link above. Installing VS Code through Ubuntu (not shown here) will result in incorrect paths, and trouble down the road with finding unix commands and the python installation.
+* You can install VS code by downloading and installing the application on your laptop from the link above. Installing VS Code through Ubuntu (not shown here) will result in incorrect paths, and trouble down the road with finding unix commands and the python installation.
 
-### Step 2: Install the Python extensions for VS Code
+### Step 2: Install the Python extension for VS Code
 
 Once VS Code is installed you will need to install an extension for Python. VS Code can be used for programming in many different programming languages, so we will need to tell VSCode that we want to use Python. You can learn more about extensions [here](https://code.visualstudio.com/docs/introvideos/extend).
 
 To install the Python extension, go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "Python" by IntelliSense. This extension works alongside Python in Visual Studio Code to provide performant language support, linters, and debuggers for Python. You will learn about each of these in the days to come. They will be useful in formatting your code to make it beautiful, while also checking for mistakes and errors.
 
-### Step 3: Tell VScode which version of Python to use
+### Step 3: Install the WSL extension for VS Code
 
-Next, we need to tell VScode which version of Python to use, and point to the latest version that we just installed. To do this, you can go to View -> Command Palette. Then in the search box type "Python: Select Interpreter". Choose the most recent version of python that you just installed 3.11.1. Now you are all set to start writing Python code in VS Code!
+To install the WSL extension, go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "WSL" by Microsoft.
 
-### Step 4: Setting up a virtual environment in VS code
+### Step 4: Open a WSL window directly from VS Code
+
+* Press F1 (to open the command palette), select "WSL: New WSL Window using Distro", and select the "Ubuntu default distro"
+* Use the File menu to open your be434-spring-2023 GitHib folder. When you select a folder, VS Code will set up the environment, and a new VS Code window will appear with the contents of that WSL folder. When you hover over any of the files within your folder, notice they have the correct Linux paths.
+
+If you already have a folder open, you can also use the WSL: Reopen Folder in WSL command. You will be prompted which distro to use.
+
+### Step 5: Tell VScode which version of Python to use
+
+* Code -> Preferences -> Settings . Search for "environment", then find "Python Terminal: Activate Environment, unselect "Activate Python Environment in Terminal created using the Extension."
+* Next, we need to tell VScode which version of Python to use instead, and point to the latest version that we just installed. To do this, you can go to View -> Command Palette. Then in the search box type "Python: Select Interpreter". Choose the most recent version of python that you just installed 3.11.1. Now you are all set to start writing Python code in VS Code!
+
+### Step 6: Setting up a virtual environment in VS code
 
 When you installed Python on your computer you installed it globally on the Ubuntu Linux distribution. But, working in a global environment can be tricky because different versions of python packages may not play nicely together. To avoid any conflicts, developers usually create a virtual environment for each project and then install the packages they need in that virtual environment. When you then run a Python program within that environment, you know that it's running against only those specific packages.
 

@@ -43,9 +43,18 @@ All your assignments will be pushed to GitHub where I will pull the code to my m
 
 Next, you will need to create a copy of this repository on your laptop so you can work on python code locally, and then turn it in by pushing the code back to Github (more on this next). I recommend using [the Github Desktop](https://desktop.github.com/)
 
+
 * Download [the Github Desktop](https://desktop.github.com/) for your laptop
+
+### Mac Users
 * From the top menu bar, select Github Desktop, then select Preferences, go to Accounts, and login to Github
 * From the top menu bar, select Github Desktop, then select Preferences, go to Integrations, select Visual Studio Code as the "External Editor"
+
+### PC Users
+* Goto File -> Options
+* Under Accounts, be sure you are loged to Github
+* Under Integrations, be sure you have Visual Studio Code as the "External Editor"
+
 * Be sure to "save" your Preferences
 
 ![4git](./images/4_github_account_login.png "Login to GitHub on Desktop")
