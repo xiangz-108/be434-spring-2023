@@ -22,17 +22,17 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 Or, you can enbale it in the Windows Features dialog:
 
-![1win](1_win_wsl.png "Enabling WSL in the Windows Features dialog ")
+![1win](./images/1_win_wsl.png "Enabling WSL in the Windows Features dialog ")
 
 ### Install the Ubuntu app on your PC
 
 Next you need to install a Linux distribution for WSL from the Microsoft Store. We will use Ubuntu. You can use the store app, or search for a Linux distro in the Windows search bar. Choose the Linux distribution you want to install (Ubuntu) and follow the prompts.
 
-![2win](2_win_ubuntu.png "Installing the Ubuntu app")
+![2win](./images/2_win_ubuntu.png "Installing the Ubuntu app")
 
 And when done, select Launch to get started. This will open a Linux terminal and complete the installation. You'll need to create a user ID and password since you are setting up a full Linux instance. You are now running Linux on Windows. When it opens, we will create a user / password for Ubuntu.
 
-![3win](3_win_ubuntu_username.png "Setting your Ubuntu user and password")
+![3win](./images/3_win_ubuntu_username.png "Setting your Ubuntu user and password")
 
 
 ## Installing Python on your Ubuntu distribution
@@ -85,17 +85,17 @@ Once VS Code is installed you will also need to install an extension for Python.
 
 To install the extension, go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "Python" by IntelliSense. This extension works alongside Python in Visual Studio Code to provide performant language support, linters, and debuggers for Python. You will learn about each of these in the days to come. They will be useful in formatting your code to make it beautiful, while also checking for mistakes and errors.
 
-![1vs](1_vscode_python.png "Installing the Python extension in VS Code")
+![1vs](./images/1_vscode_python.png "Installing the Python extension in VS Code")
 
 Next, you will need to install an extension for WSL in VS Code. Search for and install "WSL" by Microsoft. This allows you to use the WSL/Ubuntu Linux OS you just installed in VS Code.
 
-![2vs](2_vscode_wsl.png "Installing the WSL extension in VS Code")
+![2vs](./images/2_vscode_wsl.png "Installing the WSL extension in VS Code")
 
 To try out the WSL extension, open a terminal window in VS Code, and type 'wsl' in the terminal window.
 
-![3vs](vscode_open_terminal.png "Opening a terminal in VS Code")
+![3vs](./images/vscode_open_terminal.png "Opening a terminal in VS Code")
 
-![4vs](3_vscode_wsl_terminal.png "Starting WSL in the terminal in VS Code")
+![4vs](./images/3_vscode_wsl_terminal.png "Starting WSL in the terminal in VS Code")
 
 If you have any trouble with WSL not starting, try the following
 
@@ -105,7 +105,7 @@ If you have any trouble with WSL not starting, try the following
 
 We need to tell VS code which version of Python to use, and point to the latest version that we just installed (Python 3.11.1). To do this, you can go to menu bar and select View -> Command Palette. Then in the search box type "Python: Select Interpreter". Choose the most recent version of python that you just installed 3.11.1. Now you are all set to start writing Python code in VS Code!
 
-![5vs](5_vscode_select_python.png "Select Python Interpreter from the command pallete VS Code")
+![5vs](./images/5_vscode_select_python.png "Select Python Interpreter from the command pallete VS Code")
 
 ## Cloning a copy of your Class GitHub repository (be434-spring-2023) onto your laptop and using in VS Code
 
@@ -115,23 +115,23 @@ In this section, we will be cloning (or copying) your repository from your web-b
 
 * From the Source Control view in VS Code (third icon down on the left side panel) click on the button to Clone Repository. Alternatively, you can use the "Git: Clone" command in the Command Palette.
 
-![1vsg](1_vscode_git_clone.png "Select Clone Repository in the Source Control view in VS Code")
+![1vsg](./images/1_vscode_git_clone.png "Select Clone Repository in the Source Control view in VS Code")
 
 * Once you click on "Clone Repository", you'll see the option to Clone from GitHub. 
 
-![2vsg](2_vscode_git_clone2.png "Select Clone from GitHub")
+![2vsg](./images/2_vscode_git_clone2.png "Select Clone from GitHub")
 
 * Authenticate with your GitHub account and authorize VS Code to search through repositories by name
 
-![3vsg](3_vscode_git_signin.png "Signin to GitHub")
+![3vsg](./images/3_vscode_git_signin.png "Signin to GitHub")
 
-![4vsg](4_vscode_git_authorize.png "Authorize VS Code to use GitHub")
+![4vsg](./images/4_vscode_git_authorize.png "Authorize VS Code to use GitHub")
 
 * Select your be434-spring-2023 repository to clone it to your computer. It should open in VS code once you do this.
 
-![5vsg](5_vscode_git_byname.png "Search for your class repository by name GitHub")
+![5vsg](./images/5_vscode_git_byname.png "Search for your class repository by name GitHub")
 
-We will be using Git inside of VScode to commit and push your code to GitHub. Check out this [video] (https://youtu.be/i_23KUAEtUM) to learn more about how to do this.
+We will be using Git inside of VScode to commit and push your code to GitHub. Check out this [video](https://youtu.be/i_23KUAEtUM) to learn more about how to do this.
 
 And, check out a cheatsheet [here](https://training.github.com/downloads/github-git-cheat-sheet.pdf) on Git.
 
