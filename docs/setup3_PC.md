@@ -1,23 +1,43 @@
-# Task 3: Installing Python, VS Code, and a virtual env on your PC Computer
+# Task 3: Installing WSL/Ubuntu, Python and VS Code on your PC Computer
 
 In this class, we will be teaching you Python programming from the ground up! The best way to learn Python is by practicing as often as you can. By installing python directly on your laptop, you can practice anywhere and anytime you like, with or without an internet connection.
+
+I have added detailed instructions below, but here are a few resources for extra details on how this works on your PC:
+* [Developing in WSL in VSCode](https://code.visualstudio.com/docs/remote/wsl)
+* [Remote Development in WSL](https://www.youtube.com/watch?v=bz1KauFlbQI)
 
 ## Getting Started, Installing WSL and Ubuntu on your PC
 
 Before we can get started, we need to install a basic Unix Operating System on your Windows machine. Windows Subsystem for Linux (WSL) comes with the Windows operating system, but you must enable it and install a Linux distribution (Ubuntu) before you can begin using it. This will allow you to use basic Unix commands in this class including "chmod" for making your python scripts executable, and "make test" to run the tests on your python code to make sure the code is correct.
 
-* Make sure your laptop has been recently updated and has the most recent Windows Updates.
-* Use this[tutorial](https://code.visualstudio.com/docs/remote/wsl-tutorial) to install WSL and an Ubuntu distribution (first two sections).
-* Be sure to create a user / password for Ubuntu
+### Enable WSL on your PC
 
-If you have any trouble, here are a few extra links from the Microsoft website on WSL installation:
+Windows Subsystem for Linux (WSL) is an optional feature on Windows 10. You can enable it through PowerShell or the Windows Features dialog.
 
-* [Getting started](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#get-started})
-* [Set up your Linux Username and Password](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password)
+You can install it using PowerShell with the following command (note you will need to restart afterwards):
 
-## Installing Python and the Python Virtual Environment on your Ubuntu distribution
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
 
-Now that you have Ubuntu installed on your PC, you need to install the version of Python that we will be using for the class (Python 3.11.1). Note that Python version 3.10 comes with the Ubuntu installation. To install the latest Python, you will launch the Ubuntu app and use the following commands to install Python 3.11.1:
+Or, you can enbale it in the Windows Features dialog:
+
+![1win](1_win_wsl.png "Enabling WSL in the Windows Features dialog ")
+
+### Install the Ubuntu app on your PC
+
+Next you need to install a Linux distribution for WSL from the Microsoft Store. We will use Ubuntu. You can use the store app, or search for a Linux distro in the Windows search bar. Choose the Linux distribution you want to install (Ubuntu) and follow the prompts.
+
+![2win](2_win_ubuntu.png "Installing the Ubuntu app")
+
+And when done, select Launch to get started. This will open a Linux terminal and complete the installation. You'll need to create a user ID and password since you are setting up a full Linux instance. You are now running Linux on Windows. When it opens, we will create a user / password for Ubuntu.
+
+![3win](3_win_ubuntu_username.png "Setting your Ubuntu user and password")
+
+
+## Installing Python on your Ubuntu distribution
+
+Now that you have Ubuntu installed on your PC, you need to install the version of Python that we will be using for the class (Python 3.11.1). Note that Python version 3.10 comes with the Ubuntu installation (and this one is fine to use too). But, to get the latest and fastest Python (Python 3.11.1) and pip (for installing Python modules), copy/paste the following commands into the Ubuntu terminal (use your Ubuntu user/password from above when prompted)
 
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -31,19 +51,11 @@ sudo apt install python3.11-venv
 sudo apt install python3-pip
 ```
 
-You can now check the installation to see where Python is installed and which version you have.
+You can check to see the the newest version of Python and pip are installed using the following commands:
 
 ```
-which python3
 python3 --version
 pip3 --version
-```
-
-These commands above should return the following:
-```
-/usr/bin/python3
-Python 3.11.1
-pip 22.0.2
 ```
 
 You will also need to update your $PATH to tell your computer where to find Python.
@@ -53,101 +65,95 @@ touch ~/.profile
 nano ~/.profile
 ```
 
-Add this line to the ~/.profile file when the nano file editor opens it.
+Add the line below to the ~/.profile file when the nano file editor opens it (I usually add this in the first empty line you see, but it can be anywhere in the file). Once do this you can ^W (command W) to write the file, and ^X (command X) to exit the file.
 
 ```
 export PATH="~/.local/bin:$PATH"
 ```
 
+You now have Python installed, and your computer knows where to find it!
+
 ## Getting started with the VS Code Editor
 
-Code editors (or Integrated Development Environment, IDEs) are fantastic resources that make it easy to write and edit code on your laptop. There are many code editors out there, but in this class, we will be using the VS Code editor to write and edit our Python programs. Code editors recognize the programming language we are coding in and highlight the syntax of the code making it easier to "see". In addition, code editors offer code completion options and can even suggest a Pytnon function for you to use based on a few letters. Amazing! IDEs will definitely make your life easier! I recommend learning as much as you can about VS Code to find out its capabilities and how it can help you in writing great code. For now, here are a few instructions to get you started.
+Code editors (or Integrated Development Environment, IDEs) are fantastic resources that make it easy to write and edit code on your laptop. There are many code editors out there, but in this class, we will be using the VS Code editor to write and edit our Python programs. Code editors recognize the programming language we are coding in and highlight the syntax of the code making it easier to "see" mistakes or typos. In addition, code editors offer code completion options and can even suggest a Python functions for you to use based on a few letters. Amazing! IDEs will definitely make your life easier! I recommend learning as much as you can about VS Code to find out its capabilities and how it can help you in writing great code. For now, here are a few instructions to get you started.
 
-### Step 1: Install VScode
+Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop. We will write and edit Python code using the Visual Studio code editor. Follow the directions on the VS Code website to download and install the version of [VS Code](https://code.visualstudio.com/) that is appropriate for your PC laptop.
 
-Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop. We will write and edit python code using the Visual Studio code editor. Follow the directions on the VS Code website to download and install the version of [VS Code](https://code.visualstudio.com/) that is appropriate for your PC laptop.
+## Installing the Python and WSL extensions for VS Code
 
-* You can install VS code by downloading and installing the application on your laptop from the link above. Installing VS Code through Ubuntu (not shown here) will result in incorrect paths, and trouble down the road with finding unix commands and the python installation.
+Once VS Code is installed you will also need to install an extension for Python. VS Code can be used for programming in many different programming languages, so we will need to tell VSCode that we want to use Python. You can learn more about extensions [here](https://code.visualstudio.com/docs/introvideos/extend). 
 
-### Step 2: Install the Python extension for VS Code
+To install the extension, go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "Python" by IntelliSense. This extension works alongside Python in Visual Studio Code to provide performant language support, linters, and debuggers for Python. You will learn about each of these in the days to come. They will be useful in formatting your code to make it beautiful, while also checking for mistakes and errors.
 
-Once VS Code is installed you will need to install an extension for Python. VS Code can be used for programming in many different programming languages, so we will need to tell VSCode that we want to use Python. You can learn more about extensions [here](https://code.visualstudio.com/docs/introvideos/extend).
+![1vs](1_vscode_python.png "Installing the Python extension in VS Code")
 
-To install the Python extension, go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "Python" by IntelliSense. This extension works alongside Python in Visual Studio Code to provide performant language support, linters, and debuggers for Python. You will learn about each of these in the days to come. They will be useful in formatting your code to make it beautiful, while also checking for mistakes and errors.
+Next, you will need to install an extension for WSL in VS Code. Search for and install "WSL" by Microsoft. This allows you to use the WSL/Ubuntu Linux OS you just installed in VS Code.
 
-### Step 3: Install the WSL extension for VS Code
+![2vs](2_vscode_wsl.png "Installing the WSL extension in VS Code")
 
-To install the WSL extension, go the the VS Code menu, Select View -> Extensions, to pull up the "Extensions Market Place" on the left-hand panel. Search for and install "WSL" by Microsoft.
+To try out the WSL extension, open a terminal window in VS Code, and type 'wsl' in the terminal window.
 
-### Step 4: Open a WSL window directly from VS Code
+![3vs](vscode_open_terminal.png "Opening a terminal in VS Code")
+
+![4vs](3_vscode_wsl_terminal.png "Starting WSL in the terminal in VS Code")
+
+If you have any trouble with WSL not starting, try the following
 
 * Press F1 (to open the command palette), select "WSL: New WSL Window using Distro", and select the "Ubuntu default distro"
-* Use the File menu to open your be434-spring-2023 GitHib folder. When you select a folder, VS Code will set up the environment, and a new VS Code window will appear with the contents of that WSL folder. When you hover over any of the files within your folder, notice they have the correct Linux paths.
 
-If you already have a folder open, you can also use the WSL: Reopen Folder in WSL command. You will be prompted which distro to use.
+## Telling VS Code which version of Python to use
 
-### Step 5: Tell VScode which version of Python to use
+We need to tell VS code which version of Python to use, and point to the latest version that we just installed (Python 3.11.1). To do this, you can go to menu bar and select View -> Command Palette. Then in the search box type "Python: Select Interpreter". Choose the most recent version of python that you just installed 3.11.1. Now you are all set to start writing Python code in VS Code!
 
-* Code -> Preferences -> Settings . Search for "environment", then find "Python Terminal: Activate Environment, unselect "Activate Python Environment in Terminal created using the Extension."
-* Next, we need to tell VScode which version of Python to use instead, and point to the latest version that we just installed. To do this, you can go to View -> Command Palette. Then in the search box type "Python: Select Interpreter". Choose the most recent version of python that you just installed 3.11.1. Now you are all set to start writing Python code in VS Code!
+![5vs](5_vscode_select_python.png "Select Python Interpreter from the command pallete VS Code")
 
-### Step 6: Setting up a virtual environment in VS code
+## Cloning a copy of your Class GitHub repository (be434-spring-2023) onto your laptop and using in VS Code
 
-When you installed Python on your computer you installed it globally on the Ubuntu Linux distribution. But, working in a global environment can be tricky because different versions of python packages may not play nicely together. To avoid any conflicts, developers usually create a virtual environment for each project and then install the packages they need in that virtual environment. When you then run a Python program within that environment, you know that it's running against only those specific packages.
+You should have already created a copy of the class GitHub repository under your own web-based GitHub account. If not, go back to setup2_github to create a GitHub account and make a copy of the class GitHub repository. 
 
-We are going to create a virtual environment in VS Code for our class. We will install several python packages/modules that will help us to test, debug and format our code in this virtual environment.
+In this section, we will be cloning (or copying) your repository from your web-based GitHub repository to your laptop. Here is a [great video](https://www.youtube.com/watch?v=bz1KauFlbQI) that walks you through the steps for cloning a GitHib repository into VS Code. The overall steps are:
 
-* From the VS Code menu bar select File -> Open Folder -> Then navigate to the be433-spring-2023 folder that you "pulled" down to your computer from GitHub.
+* From the Source Control view in VS Code (third icon down on the left side panel) click on the button to Clone Repository. Alternatively, you can use the "Git: Clone" command in the Command Palette.
 
-Next, we will create a virtual environment (venv) in VS Code to install all of the Python packages we will need for our class. venv allows you to manage separate package installations for different projects and is installed with Python 3 by default.
+![1vsg](1_vscode_git_clone.png "Select Clone Repository in the Source Control view in VS Code")
 
-* From within VS Code, you can create non-global environments, using virtual environments by opening the Command Palette, start typing "Python: Create Environment command" to search, and then select the command.
+* Once you click on "Clone Repository", you'll see the option to Clone from GitHub. 
 
-The command presents a list of environment types: Venv or Conda. Select Venv.
-![1venv](./images/1_venv_select_env_type.png "Selecting a venv type")
+![2vsg](2_vscode_git_clone2.png "Select Clone from GitHub")
 
-The the command presents a list of interpreters that can be used as a base Python for the new virtual environment. Select Python Version 3.11.1 that we just installed.
-![2venv](./images/2_venv_select_python_version.png "Selecting a venv python version")
+* Authenticate with your GitHub account and authorize VS Code to search through repositories by name
 
-### Step 5: Install the Python modules we need for this class in the venv
+![3vsg](3_vscode_git_signin.png "Signin to GitHub")
 
-Once you have created your vitual environment, you can install Python modules in that environment. In Python, modules are how you obtain any number of useful code libraries. For example, in this class we will use several modules that will help us to test, debug and format code. These are all contained in the requirement.txt file in the docs directory in the be434-spring-2023 Github repository.  
+![4vsg](4_vscode_git_authorize.png "Authorize VS Code to use GitHub")
 
-First we need to open a terminal window in VS Code:
-![3venv](./images/vscode_open_terminal.png "Opening a terminal in VS Code")
+* Select your be434-spring-2023 repository to clone it to your computer. It should open in VS code once you do this.
 
-Note, you should already have the be434-spring-2023 directory open in VS Code and it should automatically activate the virtual environment when you open the terminal
-![4venv](./images/3_venv_activate_env.png "Activating a virtual environment")
+![5vsg](5_vscode_git_byname.png "Search for your class repository by name GitHub")
 
-If this is not the case, be sure to open the be434-spring-2023 directory in VS Code and then activate the virtual machine
+We will be using Git inside of VScode to commit and push your code to GitHub. Check out this [video] (https://youtu.be/i_23KUAEtUM) to learn more about how to do this.
 
-You will need to enter the following commands in the terminal:
-```
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-source .venv/bin/activate
-```
+And, check out a cheatsheet [here](https://training.github.com/downloads/github-git-cheat-sheet.pdf) on Git.
 
-Now you can install the python modules we need into your virtual environment. You can do this with a single command (from the be343-spring-2023 folder):
+You can also use the [GitHub Desktop application](https://desktop.github.com/) to commit code, if you find it easier than using Git from VS Code.
+
+## Installing Python modules for running tests on your code
+
+Now that you have downloaded the class repository, you can install all of the Python modules we will use in the class to test you code (found in the be434-spring-2023/docs/requirements.txt file). Python modules (or code packages) are written by people in Python community and can be used by anyone to perform certain functions in Python. We are going to use several Python modules in this class to test your code and make sure it meets community standards. Open a terminal in VS Code (Terminal -> New Terminal) which should take you to the be434-spring-2023 folder (that you opened when you cloned the repository above), then navigate to the docs folder like so:
 
 ```
+cd ./docs
 python3 -m pip install -r ./docs/requirements.txt
 ```
 
-Or by installing each one individually...
+To make sure you installed the modules correctly, try a few out. You should get help messages from each program telling you how to run them.
 
 ```
-python3 -m pip install pytest
-python3 -m pip install pylint
-python3 -m pip install flake8
-python3 -m pip install yapf
-python3 -m pip install black
-python3 -m pip install mypy
-python3 -m pip install pytest-flake8
-python3 -m pip install pytest-mypy
-python3 -m pip install pytest-pylint
+flake8 --help
+pylint --help
 ```
 
-Overview of these commands:
+Overview of the commands:
 
 ```
 black # this command will format our code properly
@@ -156,7 +162,7 @@ mypy # this command will run type checks on our code with mypy.
 flake8 # this command will check code linting.
 ```
 
-### Step 6: Fixing a small issue with pylint
+## Fixing a small issue with pylint
 
 Now you have installed all of the python modules that we need for testing your code! Congrats! When we start testing our code (in the weeks to come), you might find that "pylint" complains about the variable `rv` (return value) that is in the _test.py_ file of each homework. This is a perfectly fine variable name, so to silence this warning, create your own configuration file like so:
 
@@ -164,16 +170,19 @@ Now you have installed all of the python modules that we need for testing your c
 pylint --generate-rcfile > ~/.pylintrc
 ```
 
-Then edit that file to add the following line after "MAIN". Note that this should be one continuous line, but I've broken it here for display:
+Then edit that file using nano to add the following line after "MAIN".
+
+```
+nano ~/.pylintrc
+```
+
+add this line to ~/.pylintrc. Note that this should be one continuous line.
 
 ```
 disable=too-many-locals,invalid-name,too-many-statements,too-many-arguments,cell-var-from-loop,wrong-import-order
 ``` 
 
-```
-nano ~/.pylintrc
-```
-Use ctr-O & return to save the file, and ctr-X to exit
+Use ctr-W & return to save the file, and ctr-X to exit
 
 ## Author
 
