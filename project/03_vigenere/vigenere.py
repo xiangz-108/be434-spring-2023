@@ -2,12 +2,11 @@
 """
 Author : xiangzhang <xiangzhang@localhost>
 Date   : 2023-04-29
-Purpose: substitution cipher
+Purpose: vigenere cipher
 """
 
 import argparse
 import sys
-import random
 
 
 # --------------------------------------------------
@@ -15,15 +14,14 @@ def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description='substitution cipher',
+        description='vigenere cipher',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('-s',
-                        '--seed',
+    parser.add_argument('-k',
+                        '--keyword',
                         help='A random seed',
-                        metavar='SEED',
-                        type=int,
-                        default=3)
+                        metavar='KEYWORD',
+                        default='CIPHER')
 
     parser.add_argument('-d',
                         '--decode',
@@ -47,24 +45,31 @@ def get_args():
     return parser.parse_args()
 
 
+# --------------------------------------------------
+def encode(input_char, cipher_char):
+    """encode via summation of index of input_char and cipher_char"""
+    idx1 = ord(input_char) - 97
+    idx2 = ord(cipher_char) - 97
+    sum_idx = (idx1 + idx2) % 26
+    result_char = chr(sum_idx + 97)
+    return result_char
+
+
+# --------------------------------------------------
+def decode(input_char, cipher_char):
+    """decode via index of input_char - index of cipher_char"""
+    idx1 = ord(input_char) - 97
+    idx2 = ord(cipher_char) - 97
+    sum_idx = (idx1 - idx2) % 26
+    result_char = chr(sum_idx + 97)
+    return result_char
+
 
 # --------------------------------------------------
 def main():
     """Make a jazz noise here"""
     args = get_args()
-
-    random.seed(args.seed)
-
-    # Create a list of all the letters in the alphabet
-    alphabet = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-
-    # Shuffle the alphabet using a random seed
-    shuffled_alphabet = random.sample(alphabet, len(alphabet))
-
-    # Create a dictionary map each letter to shuffled letter
-    shuffled_dict = dict(zip(alphabet, shuffled_alphabet))
-    if args.decode:  # if decode, switch the sequence
-        shuffled_dict = dict(zip(shuffled_alphabet, alphabet))
+    cipher = args.keyword
 
     # check each line, and change each character
     fh = args.file_input
@@ -73,12 +78,19 @@ def main():
     for ln in Lines:
         ln_num += 1
         output_string = ''
+        char_index = 0
         for char in ln:
             if char.isalpha():
-                # use the dictionary to convert the letter
-                output_string += shuffled_dict.get(char.upper())
+                code_ch = encode(char.lower(),
+                                 cipher[char_index % len(cipher)].lower())
+                if args.decode:
+                    code_ch = decode(char.lower(),
+                                     cipher[char_index % len(cipher)].lower())
+                output_string += code_ch.upper()
+                char_index += 1
             else:
                 output_string += char
+
         args.outfile.write(f'{output_string}')
 
 
